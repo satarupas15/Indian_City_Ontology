@@ -1,0 +1,1774 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/"
+     xml:base="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:IndianCityOntology="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology">
+        <rdfs:comment>An Ontology that describes Indian Cities including demographics, infrastructure and administrative things....TBC</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/definitions -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/definitions">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/note"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/note"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:comment>Infrastructure facilities are the fundamental physical systems, buildings and services eg airports that enable a country, city or organization to function.....
+[Source Google: this needs review]</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasAgeGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasAgeGroup">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AgeGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasBordersState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasBordersState">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State"/>
+        <definitions>Links a state to neighboring states</definitions>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasCapital -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasCapital">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Country"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/District"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <definitions>Linksa country/ state to its capital city</definitions>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasCommunityGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasCommunityGroup">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CommunityGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasOfficialLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasOfficialLanguage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Language"/>
+        <definitions>Links to its official language(s) of a state</definitions>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#IsSituatedInCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#IsSituatedInCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <rdfs:comment>denotes Educational institute situated in which city</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#IsSituatedInCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#IsSituatedInCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Country"/>
+        <rdfs:comment>denotes Educational institute situated in which country</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#IsSituatedInState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#IsSituatedInState">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State"/>
+        <rdfs:comment>denotes Educational institute situated in which State</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLObjectProperty_41aec3e8_23af_4344_974c_ae5e3d6cc049 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLObjectProperty_41aec3e8_23af_4344_974c_ae5e3d6cc049">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_3a99a7de_be39_4c6f_b3e2_9af3ce4c3f37"/>
+        <rdfs:label xml:lang="en">HasTeacher</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasDemographyProfile -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasDemographyProfile">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEconomicFacility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEconomicFacility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EconomicProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEducationalFacility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEducationalFacility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEnvironmentalProfile -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEnvironmentalProfile">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasHealthcareFacility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasHealthcareFacility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasInfrastructureFacility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasInfrastructureFacility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/InfrastructureFacility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HostsEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HostsEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/IsLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/IsLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/IsPartOfCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/IsPartOfCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/District"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Village"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Country"/>
+        <rdfs:comment>Links administrative unit to its country (e.g.-India)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/WithOtherClass"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#AdministrativeProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#AdministrativeProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#FemaleLiteracyRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#FemaleLiteracyRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographyProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LandmarkProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasChildPopulation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasChildPopulation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographyProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasGDP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasGDP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EconomicProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <note>measures the economic output of a region (e.g., a city, state, or country).</note>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasLanguage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#AdministrativeProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_8c72d534_6e25_4a11_a308_26323eed401c"/>
+        <rdfs:label>HasName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasWaterQualityIndex -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasWaterQualityIndex">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <definitions>Water level TDS of a place</definitions>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#MaleLiteracyRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#MaleLiteracyRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographyProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_164df6a6_7e16_4a59_9c8e_374fdea5dd74 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_164df6a6_7e16_4a59_9c8e_374fdea5dd74">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_8c72d534_6e25_4a11_a308_26323eed401c"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">HasStudentCount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_8c72d534_6e25_4a11_a308_26323eed401c"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">HasEstablishedYear</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_8c72d534_6e25_4a11_a308_26323eed401c"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">HasStaffCount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_49769a9b_fd1c_40f0_87d6_91231a3c5133 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_49769a9b_fd1c_40f0_87d6_91231a3c5133">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_8c72d534_6e25_4a11_a308_26323eed401c"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">HasAddress</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_8c72d534_6e25_4a11_a308_26323eed401c -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_8c72d534_6e25_4a11_a308_26323eed401c">
+        <rdfs:label xml:lang="en">EducationalProperty</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_e2f952d6_be4d_4a93_8a39_1366c6b21c21 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_e2f952d6_be4d_4a93_8a39_1366c6b21c21">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_8c72d534_6e25_4a11_a308_26323eed401c"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">HasCapacity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#cleanlinessIndex -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#cleanlinessIndex">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AreaInSqMeters -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AreaInSqMeters">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LandmarkProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/ClosingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/ClosingTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LandmarkProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographyProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographyProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EconomicProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EconomicProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EntryFeeINR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EntryFeeINR">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LandmarkProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EventName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EventName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EventProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EventProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EventProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasAQI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasAQI">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <definitions>Air Quality Index of a place</definitions>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasArchitecturalStyle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasArchitecturalStyle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LandmarkProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasAreaInSqKm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasAreaInSqKm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#AdministrativeProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasAverageTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasAverageTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <definitions>Average temperage of a place in degee celcius</definitions>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasBedCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasBedCount">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEmploymentRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEmploymentRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EconomicProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEventDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEventDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EventProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEventType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEventType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasFacilityType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasFacilityType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasFemalePopulation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasFemalePopulation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographyProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasLandmarkName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasLandmarkName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LandmarkProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasLatitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#AdministrativeProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasLiteracyRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasLiteracyRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographyProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <definitions>Literacy rate in percentage</definitions>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasLongitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#AdministrativeProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasMalePopulation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasMalePopulation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographyProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#AdministrativeProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasPinCodePrefix -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasPinCodePrefix">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#AdministrativeProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasTier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasTier">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#AdministrativeProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasTotalPopulation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasTotalPopulation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographyProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <definitions>Total population includes male and female population of a place</definitions>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographyProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/IsPublicFacility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/IsPublicFacility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment></rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/IsUNESCOSite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/IsUNESCOSite">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LandmarkProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LandmarkProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LandmarkProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/OpeningTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/OpeningTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LandmarkProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/PerCapitaIncome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/PerCapitaIncome">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EconomicProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/YearBuilt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/YearBuilt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LandmarkProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Adult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Adult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AgeGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#AirQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#AirQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProfile"/>
+        <definitions>a standardized number that reports daily air quality</definitions>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Children -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Children">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AgeGroup"/>
+        <definitions>Age group between 0-14</definitions>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Cleanliness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Cleanliness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_3a99a7de_be39_4c6f_b3e2_9af3ce4c3f37 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_3a99a7de_be39_4c6f_b3e2_9af3ce4c3f37">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:label xml:lang="en">Teacher</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_3ec5ceec_f54b_4c72_95f0_13a032d80c6c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_3ec5ceec_f54b_4c72_95f0_13a032d80c6c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:label xml:lang="en">Training_Centre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_aa31b580_ff60_46f2_9f7a_e5b7e2d98cbb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_aa31b580_ff60_46f2_9f7a_e5b7e2d98cbb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:label xml:lang="en">College</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_c2d98e4d_5278_4985_beef_8a782501d424 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_c2d98e4d_5278_4985_beef_8a782501d424">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:label xml:lang="en">University</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_fe489730_b5ff_4c92_bf58_2cb45bdea283 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_fe489730_b5ff_4c92_bf58_2cb45bdea283">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:label xml:lang="en">School</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#SeniorCitizen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#SeniorCitizen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AgeGroup"/>
+        <definitions>Age group 60+</definitions>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProfile"/>
+        <definitions>Average temperature of a place</definitions>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#WaterQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#WaterQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Youth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Youth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AgeGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity">
+        <definitions>Represents a formal organizational structure with defined boundaries, responsibilities, and authority.</definitions>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AgeGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AgeGroup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Airport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Airport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/InfrastructureFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/BusTerminal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/BusTerminal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/InfrastructureFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <definitions>Represents a city in India (e.g., Mumbai, Delhi, Bangalore).</definitions>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CommunityGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CommunityGroup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <definitions>A country is a geopolitical entity that represents a distinct territorial area recognized as a nation or state, typically having defined borders, a permanent population, and a governing authority.</definitions>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CulturalEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CulturalEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile">
+        <definitions>Reprsents specific demographic charcteristics</definitions>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/District -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/District">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <definitions>Administrative division within a state (e.g., South Delhi, Mumbai Suburban).</definitions>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EconomicProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EconomicProfile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility">
+        <rdfs:comment>Specifies different kinds of Education facilites available</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EnvironmentalProfile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/GenderRatio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/GenderRatio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/InfrastructureFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/InfrastructureFacility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LiteracyRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/LiteracyRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/MetroStation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/MetroStation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/InfrastructureFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/PoliticalEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/PoliticalEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Population -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Population">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/RailwayStation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/RailwayStation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/InfrastructureFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/SocioEconomicGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/SocioEconomicGroup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/DemographicProfile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/SportsEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/SportsEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+        <definitions>State in India (e.g., Maharashtra, West Bengal).</definitions>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Tier1City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Tier1City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Tier2City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Tier2City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Tier3City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Tier3City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Village -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Village">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AdministrativeEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Adult -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Adult">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AgeGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Bandra_Fort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Bandra_Fort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Mumbai"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Maharashtra"/>
+        <ClosingTime>6:30 PM</ClosingTime>
+        <EntryFeeINR>Free</EntryFeeINR>
+        <HasArchitecturalStyle>European-style</HasArchitecturalStyle>
+        <HasLandmarkName>Bandra Fort</HasLandmarkName>
+        <OpeningTime>6:00 AM</OpeningTime>
+        <YearBuilt>1640 CE</YearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Bangalore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Bangalore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <IndianCityOntology:HasWaterQualityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</IndianCityOntology:HasWaterQualityIndex>
+        <HasAQI rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">157</HasAQI>
+        <HasAverageTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22</HasAverageTemperature>
+        <HasFemalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6000000</HasFemalePopulation>
+        <HasLiteracyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88.6</HasLiteracyRate>
+        <HasMalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8000000</HasMalePopulation>
+        <HasTotalPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14000000</HasTotalPopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Chennai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Chennai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <IndianCityOntology:HasWaterQualityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500</IndianCityOntology:HasWaterQualityIndex>
+        <HasAQI rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">170</HasAQI>
+        <HasAverageTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28</HasAverageTemperature>
+        <HasFemalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2310888</HasFemalePopulation>
+        <HasLiteracyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</HasLiteracyRate>
+        <HasMalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2335884</HasMalePopulation>
+        <HasTotalPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4646732</HasTotalPopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Child -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Child">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AgeGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Delhi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Delhi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <IndianCityOntology:HasAgeGroup rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Adult"/>
+        <IndianCityOntology:HasAgeGroup rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Child"/>
+        <IndianCityOntology:HasAgeGroup rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Senior"/>
+        <IndianCityOntology:HasAgeGroup rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Youth"/>
+        <IndianCityOntology:HasChildPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3500000</IndianCityOntology:HasChildPopulation>
+        <IndianCityOntology:HasWaterQualityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</IndianCityOntology:HasWaterQualityIndex>
+        <IndianCityOntology:cleanlinessIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</IndianCityOntology:cleanlinessIndex>
+        <HasAQI rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">450</HasAQI>
+        <HasAverageTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</HasAverageTemperature>
+        <HasFemalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7800000</HasFemalePopulation>
+        <HasLiteracyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88.7</HasLiteracyRate>
+        <HasMalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8900000</HasMalePopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Elephanta_Caves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Elephanta_Caves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Mumbai"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Maharashtra"/>
+        <IndianCityOntology:HasAddress>Elephanta Island (Gharapuri Island)</IndianCityOntology:HasAddress>
+        <EntryFeeINR>40 person for Indian citizen
+600 for foreign tourists</EntryFeeINR>
+        <HasArchitecturalStyle>Rock-cut-cave temple design</HasArchitecturalStyle>
+        <HasLandmarkName>Elephanta Cave</HasLandmarkName>
+        <IsUNESCOSite>Yes</IsUNESCOSite>
+        <YearBuilt>mid 5th-8th century CE</YearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Gateway_of_India -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Gateway_of_India">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Mumbai"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Maharashtra"/>
+        <IndianCityOntology:HasAddress>Apollo Bunder, Colaba, South Mumbai</IndianCityOntology:HasAddress>
+        <HasArchitecturalStyle>Indo-Saracenic Revival Architecture</HasArchitecturalStyle>
+        <HasLandmarkName>Gateway of India</HasLandmarkName>
+        <OpeningTime>Open 24 hours a day</OpeningTime>
+        <YearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1924</YearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HAL_Airport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HAL_Airport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Airport"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Bangalore"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Karnataka"/>
+        <IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1941</IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107>
+        <HasAreaInSqKm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</HasAreaInSqKm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Hindu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Hindu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CommunityGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Indore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Indore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <HasAQI rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110</HasAQI>
+        <HasAverageTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26</HasAverageTemperature>
+        <HasFemalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1164837</HasFemalePopulation>
+        <HasLiteracyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80.8</HasLiteracyRate>
+        <HasMalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1262872</HasMalePopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Jain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Jain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CommunityGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Karnataka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Karnataka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Kempegowda_International_Airport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Kempegowda_International_Airport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Airport"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Bangalore"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Karnataka"/>
+        <IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2008</IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107>
+        <HasAreaInSqKm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</HasAreaInSqKm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Maharashtra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Maharashtra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Muslim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Muslim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CommunityGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_049aae4e_1eac_45aa_b389_86776aefca3e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_049aae4e_1eac_45aa_b389_86776aefca3e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/SportsEvent"/>
+        <rdfs:label xml:lang="en">Football</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_0a829cfe_3a8d_466e_b8ab_88ca0727e3a0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_0a829cfe_3a8d_466e_b8ab_88ca0727e3a0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+        <rdfs:label xml:lang="en">Belview NursingHome</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_125601e8_620c_463c_9552_ac4306151322 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_125601e8_620c_463c_9552_ac4306151322">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/SportsEvent"/>
+        <rdfs:label xml:lang="en">Cricket</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_2345ffda_0c9e_41fd_aec5_c32b2d6b46fc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_2345ffda_0c9e_41fd_aec5_c32b2d6b46fc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_fb113ea1_d553_44ff_b027_77ebdcd12754"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_fa15a93f_b5b5_483a_9ae5_f2373d06438f"/>
+        <IndianCityOntology:HasAddress>Taj Mahal, Dharmapuri,Forest Colony, Tajganj</IndianCityOntology:HasAddress>
+        <EntryFeeINR>Indian Citizen - 50 INR
+Foreign Tourists - 1100 INR</EntryFeeINR>
+        <HasArchitecturalStyle>Mughal Architecture</HasArchitecturalStyle>
+        <HasLandmarkName>Taj Mahal</HasLandmarkName>
+        <IsUNESCOSite>Yes</IsUNESCOSite>
+        <YearBuilt>1648-1653</YearBuilt>
+        <rdfs:label xml:lang="en">TajMahal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_27c71130_1340_404f_8dde_88277a4229c7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_27c71130_1340_404f_8dde_88277a4229c7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State"/>
+        <rdfs:label xml:lang="en">West_Bengal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_3fbb69e1_1107_4b55_9806_e9dc3ca34408 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_3fbb69e1_1107_4b55_9806_e9dc3ca34408">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Language"/>
+        <rdfs:label xml:lang="en">Bengali</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_47f7a3db_dd51_4e17_9d86_b83bad739ef6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_47f7a3db_dd51_4e17_9d86_b83bad739ef6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_fe489730_b5ff_4c92_bf58_2cb45bdea283"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_7c6b732b_f5fc_421b_92f2_deff530e6d60"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_27c71130_1340_404f_8dde_88277a4229c7"/>
+        <IndianCityOntology:OWLObjectProperty_41aec3e8_23af_4344_974c_ae5e3d6cc049 rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_8b1caac5_9ab4_4eee_8657_1254532af851"/>
+        <IndianCityOntology:OWLDataProperty_164df6a6_7e16_4a59_9c8e_374fdea5dd74 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3489</IndianCityOntology:OWLDataProperty_164df6a6_7e16_4a59_9c8e_374fdea5dd74>
+        <IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000</IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107>
+        <IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">547</IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b>
+        <IndianCityOntology:OWLDataProperty_49769a9b_fd1c_40f0_87d6_91231a3c5133>Barasat,Kolkata</IndianCityOntology:OWLDataProperty_49769a9b_fd1c_40f0_87d6_91231a3c5133>
+        <IndianCityOntology:OWLDataProperty_e2f952d6_be4d_4a93_8a39_1366c6b21c21 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4328</IndianCityOntology:OWLDataProperty_e2f952d6_be4d_4a93_8a39_1366c6b21c21>
+        <rdfs:label xml:lang="en">Adamas_International_School</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_5198a1df_f73d_4c61_ab76_76f58e60f6cc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_5198a1df_f73d_4c61_ab76_76f58e60f6cc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Language"/>
+        <rdfs:label xml:lang="en">Hindi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_7636836f_8a51_4343_9a44_87c5e9c12633 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_7636836f_8a51_4343_9a44_87c5e9c12633">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CulturalEvent"/>
+        <rdfs:label xml:lang="en">Music</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_7c6b732b_f5fc_421b_92f2_deff530e6d60 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_7c6b732b_f5fc_421b_92f2_deff530e6d60">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <HasHealthcareFacility rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_93feed06_ed5b_48ca_aaf4_ec2c7bb4eb4f"/>
+        <HasAQI rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">173</HasAQI>
+        <HasAverageTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26</HasAverageTemperature>
+        <HasFemalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2139928</HasFemalePopulation>
+        <HasLiteracyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">86</HasLiteracyRate>
+        <HasMalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2356766</HasMalePopulation>
+        <rdfs:label xml:lang="en">Kolkata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_85b10939_cd26_448c_9d0a_8810e80c2c21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_85b10939_cd26_448c_9d0a_8810e80c2c21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CulturalEvent"/>
+        <rdfs:label xml:lang="en">Drama</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_8b1caac5_9ab4_4eee_8657_1254532af851 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_8b1caac5_9ab4_4eee_8657_1254532af851">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_3a99a7de_be39_4c6f_b3e2_9af3ce4c3f37"/>
+        <rdfs:label xml:lang="en">Senthil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_93feed06_ed5b_48ca_aaf4_ec2c7bb4eb4f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_93feed06_ed5b_48ca_aaf4_ec2c7bb4eb4f">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HealthcareFacility"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_7c6b732b_f5fc_421b_92f2_deff530e6d60"/>
+        <HasBedCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000</HasBedCount>
+        <rdfs:label xml:lang="en">AMRI_Hospitals</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_a372c317_36df_4d8d_8cce_9dd8226800db -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_a372c317_36df_4d8d_8cce_9dd8226800db">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_3ec5ceec_f54b_4c72_95f0_13a032d80c6c"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_7c6b732b_f5fc_421b_92f2_deff530e6d60"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_27c71130_1340_404f_8dde_88277a4229c7"/>
+        <IndianCityOntology:OWLDataProperty_164df6a6_7e16_4a59_9c8e_374fdea5dd74 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">477</IndianCityOntology:OWLDataProperty_164df6a6_7e16_4a59_9c8e_374fdea5dd74>
+        <IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1999</IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107>
+        <IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b>
+        <IndianCityOntology:OWLDataProperty_49769a9b_fd1c_40f0_87d6_91231a3c5133>Jadavpur,Kolkata</IndianCityOntology:OWLDataProperty_49769a9b_fd1c_40f0_87d6_91231a3c5133>
+        <IndianCityOntology:OWLDataProperty_e2f952d6_be4d_4a93_8a39_1366c6b21c21 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500</IndianCityOntology:OWLDataProperty_e2f952d6_be4d_4a93_8a39_1366c6b21c21>
+        <rdfs:label xml:lang="en">Akash_Training_Centre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_a3bb639a_6ba7_4981_aad8_31744c7a83dc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_a3bb639a_6ba7_4981_aad8_31744c7a83dc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CulturalEvent"/>
+        <rdfs:label xml:lang="en">Dance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_ae774d6a_d2ca_4b46_9fe6_787735e3460a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_ae774d6a_d2ca_4b46_9fe6_787735e3460a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_3a99a7de_be39_4c6f_b3e2_9af3ce4c3f37"/>
+        <rdfs:label xml:lang="en">Peter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_bc0c4b82_dbf9_4ef2_9687_99948e90f725 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_bc0c4b82_dbf9_4ef2_9687_99948e90f725">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_aa31b580_ff60_46f2_9f7a_e5b7e2d98cbb"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Mumbai"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Maharashtra"/>
+        <IndianCityOntology:OWLObjectProperty_41aec3e8_23af_4344_974c_ae5e3d6cc049 rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_ae774d6a_d2ca_4b46_9fe6_787735e3460a"/>
+        <IndianCityOntology:OWLDataProperty_164df6a6_7e16_4a59_9c8e_374fdea5dd74 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2476</IndianCityOntology:OWLDataProperty_164df6a6_7e16_4a59_9c8e_374fdea5dd74>
+        <IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1987</IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107>
+        <IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">557</IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b>
+        <IndianCityOntology:OWLDataProperty_49769a9b_fd1c_40f0_87d6_91231a3c5133>101,Mumbai Vashi</IndianCityOntology:OWLDataProperty_49769a9b_fd1c_40f0_87d6_91231a3c5133>
+        <IndianCityOntology:OWLDataProperty_e2f952d6_be4d_4a93_8a39_1366c6b21c21 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2700</IndianCityOntology:OWLDataProperty_e2f952d6_be4d_4a93_8a39_1366c6b21c21>
+        <rdfs:label xml:lang="en">StXaviors_Mumbai</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_c039afac_5468_46f0_8812_5c9e241e9b6d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_c039afac_5468_46f0_8812_5c9e241e9b6d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Language"/>
+        <rdfs:label xml:lang="en">English</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_d4825719_8ae2_4ce4_a3e8_1f8c3ff21910 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_d4825719_8ae2_4ce4_a3e8_1f8c3ff21910">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Language"/>
+        <rdfs:label xml:lang="en">Marathi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_d6e161d2_2daf_4c8c_8eee_f52f83380e53 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_d6e161d2_2daf_4c8c_8eee_f52f83380e53">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_c2d98e4d_5278_4985_beef_8a782501d424"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Mumbai"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Maharashtra"/>
+        <IndianCityOntology:HasName>Mumbai University</IndianCityOntology:HasName>
+        <IndianCityOntology:OWLDataProperty_164df6a6_7e16_4a59_9c8e_374fdea5dd74 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9876</IndianCityOntology:OWLDataProperty_164df6a6_7e16_4a59_9c8e_374fdea5dd74>
+        <IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1939</IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107>
+        <IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6000</IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b>
+        <IndianCityOntology:OWLDataProperty_49769a9b_fd1c_40f0_87d6_91231a3c5133>Andheri,East,Mumbai</IndianCityOntology:OWLDataProperty_49769a9b_fd1c_40f0_87d6_91231a3c5133>
+        <IndianCityOntology:OWLDataProperty_e2f952d6_be4d_4a93_8a39_1366c6b21c21 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000</IndianCityOntology:OWLDataProperty_e2f952d6_be4d_4a93_8a39_1366c6b21c21>
+        <rdfs:label xml:lang="en">Mumbai_University</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_da319bfd_ab0d_4d0b_a04c_4c787802f55b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_da319bfd_ab0d_4d0b_a04c_4c787802f55b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Language"/>
+        <rdfs:label xml:lang="en">Telegu</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_fa15a93f_b5b5_483a_9ae5_f2373d06438f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_fa15a93f_b5b5_483a_9ae5_f2373d06438f">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State"/>
+        <rdfs:label xml:lang="en">U.P</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_fb113ea1_d553_44ff_b027_77ebdcd12754 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_fb113ea1_d553_44ff_b027_77ebdcd12754">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <rdfs:label xml:lang="en">Agra</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_fd43fe03_0d6d_42a1_901c_71e869823b31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLNamedIndividual_fd43fe03_0d6d_42a1_901c_71e869823b31">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Language"/>
+        <rdfs:label xml:lang="en">Tamil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OtherReligion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OtherReligion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CommunityGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Parsi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Parsi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CommunityGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Senior -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Senior">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AgeGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Shri_Siddhi_Vinayak_Ganapati_Mandir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Shri_Siddhi_Vinayak_Ganapati_Mandir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Mumbai"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Maharashtra"/>
+        <IndianCityOntology:HasAddress>Prabhadevi</IndianCityOntology:HasAddress>
+        <EntryFeeINR>Free</EntryFeeINR>
+        <HasArchitecturalStyle>Modern Hindu Temple Architecture</HasArchitecturalStyle>
+        <HasLandmarkName>Siddhivinayak Temple</HasLandmarkName>
+        <OpeningTime>5.30 AM - 9:50 PM</OpeningTime>
+        <YearBuilt>19 November 1801</YearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Sikh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Sikh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CommunityGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Yelahanka_Air_Force_Station -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Yelahanka_Air_Force_Station">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Airport"/>
+        <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Bangalore"/>
+        <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
+        <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Karnataka"/>
+        <IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1943</IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107>
+        <HasAreaInSqKm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</HasAreaInSqKm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Youth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Youth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/AgeGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Mumbai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Mumbai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
+        <IndianCityOntology:HasCommunityGroup rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Hindu"/>
+        <IndianCityOntology:HasCommunityGroup rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Jain"/>
+        <IndianCityOntology:HasCommunityGroup rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Muslim"/>
+        <IndianCityOntology:HasCommunityGroup rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OtherReligion"/>
+        <IndianCityOntology:HasCommunityGroup rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Parsi"/>
+        <IndianCityOntology:HasCommunityGroup rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Sikh"/>
+        <IndianCityOntology:HasWaterQualityIndex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250</IndianCityOntology:HasWaterQualityIndex>
+        <HasAQI rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">164</HasAQI>
+        <HasAreaInSqKm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">603.4</HasAreaInSqKm>
+        <HasAverageTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23</HasAverageTemperature>
+        <HasFemalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8520000</HasFemalePopulation>
+        <HasLiteracyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89.7</HasLiteracyRate>
+        <HasMalePopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9870000</HasMalePopulation>
+        <HasName>Mumbai</HasName>
+        <HasPinCodePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400</HasPinCodePrefix>
+        <HasTier></HasTier>
+        <HasTier>Tier 1</HasTier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Adult">
+        <definitions>Individuals age between 30 to 59 years</definitions>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Youth">
+        <definitions>Individuals aged between 15 to 29 years</definitions>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Adult"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Children"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#SeniorCitizen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Youth"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_3a99a7de_be39_4c6f_b3e2_9af3ce4c3f37"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_3ec5ceec_f54b_4c72_95f0_13a032d80c6c"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_aa31b580_ff60_46f2_9f7a_e5b7e2d98cbb"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_c2d98e4d_5278_4985_beef_8a782501d424"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLClass_fe489730_b5ff_4c92_bf58_2cb45bdea283"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/CulturalEvent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/PoliticalEvent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/SportsEvent"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
