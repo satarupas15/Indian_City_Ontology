@@ -135,6 +135,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#IsSituatedInCity">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Airport"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/City"/>
@@ -147,6 +148,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#IsSituatedInCountry">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Airport"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Country"/>
@@ -159,6 +161,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#IsSituatedInState">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/HasEducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Airport"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/Landmark"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/State"/>
@@ -352,6 +355,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#HasName">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_8c72d534_6e25_4a11_a308_26323eed401c"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/InfrastructureFacility"/>
         <rdfs:label>HasName</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -392,6 +396,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_8c72d534_6e25_4a11_a308_26323eed401c"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/InfrastructureFacility"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label xml:lang="en">HasEstablishedYear</rdfs:label>
     </owl:DatatypeProperty>
@@ -403,6 +408,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#OWLDataProperty_8c72d534_6e25_4a11_a308_26323eed401c"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/EducationalFacility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology/InfrastructureFacility"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label xml:lang="en">HasStaffCount</rdfs:label>
     </owl:DatatypeProperty>
@@ -1270,7 +1276,9 @@
         <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Bangalore"/>
         <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
         <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Karnataka"/>
+        <IndianCityOntology:HasName>HAL Airport</IndianCityOntology:HasName>
         <IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1941</IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107>
+        <IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5000</IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b>
         <HasAreaInSqKm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</HasAreaInSqKm>
     </owl:NamedIndividual>
     
@@ -1328,7 +1336,9 @@
         <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Bangalore"/>
         <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
         <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Karnataka"/>
+        <IndianCityOntology:HasName>KIA</IndianCityOntology:HasName>
         <IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2008</IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107>
+        <IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000</IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b>
         <HasAreaInSqKm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</HasAreaInSqKm>
     </owl:NamedIndividual>
     
@@ -1675,7 +1685,9 @@ Foreign Tourists - 1100 INR</EntryFeeINR>
         <IndianCityOntology:IsSituatedInCity rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Bangalore"/>
         <IndianCityOntology:IsSituatedInCountry rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#India"/>
         <IndianCityOntology:IsSituatedInState rdf:resource="http://www.semanticweb.org/kxa24370/ontologies/2025/11/IndianCityOntology#Karnataka"/>
+        <IndianCityOntology:HasName>Yelahanka Air Force Station</IndianCityOntology:HasName>
         <IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1943</IndianCityOntology:OWLDataProperty_1861138b_d494_442c_9da7_f6c75c72d107>
+        <IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000</IndianCityOntology:OWLDataProperty_1b5be4b1_b316_4ed7_9ae1_c53758afdb8b>
         <HasAreaInSqKm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</HasAreaInSqKm>
     </owl:NamedIndividual>
     
